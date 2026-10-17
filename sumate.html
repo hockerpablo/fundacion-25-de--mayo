@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>¿Cómo ayudar? — Fundación 25 de Mayo</title>
+<meta name="description" content="Fundación sin fines de lucro que acompaña a jóvenes con discapacidad. Doná, sumate como voluntario o inscribite.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Lexend:wght@500;700&family=Rubik+Spray+Paint&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="theme-switch.css">
+<script>try{var t=localStorage.getItem("tema");if(t==="oscuro"||(!t&&matchMedia("(prefers-color-scheme: dark)").matches))document.documentElement.classList.add("noche")}catch(e){}</script>
+</head>
+<body>
+<div class="loader" id="loader" role="status" aria-live="polite" aria-label="Cargando">
+  <div class="progress" aria-hidden="true"><span class="inner"></span><span class="inner"></span><span class="inner"></span><span class="inner"></span><span class="inner"></span></div>
+  <p class="loader-txt">Cargando…</p>
+</div>
+<noscript><style>.loader{display:none}</style></noscript>
+<script>(function(){var l=document.getElementById('loader');function hide(){if(l)l.classList.add('loader-off')}window.addEventListener('load',hide);setTimeout(hide,6000);window.addEventListener('pageshow',function(e){if(e.persisted)hide()})})();</script>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <filter id="sketchy"><feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="3"/><feDisplacementMap in="SourceGraphic" scale="2.5"/></filter>
+  <filter id="sketchy-sm"><feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="7"/><feDisplacementMap in="SourceGraphic" scale="1.5"/></filter>
+</svg>
+<label class="theme-switch" title="Modo nocturno">
+  <input type="checkbox" class="theme-switch__checkbox" id="themeToggle" role="switch" aria-label="Modo nocturno">
+  <div class="theme-switch__container" aria-hidden="true">
+    <div class="theme-switch__clouds"></div>
+    <div class="theme-switch__stars-container">
+      <svg viewBox="0 0 144 55" fill="currentColor"><path d="M14 6l2 6 6 2-6 2-2 6-2-6-6-2 6-2zM44 30l1.5 4.5 4.5 1.5-4.5 1.5L44 42l-1.5-4.5L38 36l4.5-1.5zM72 8l1.2 3.6 3.6 1.2-3.6 1.2L72 17.6l-1.2-3.6-3.6-1.2 3.6-1.2zM100 34l2 6 6 2-6 2-2 6-2-6-6-2 6-2zM128 10l1.5 4.5 4.5 1.5-4.5 1.5-1.5 4.5-1.5-4.5-4.5-1.5 4.5-1.5zM26 44l1 3 3 1-3 1-1 3-1-3-3-1 3-1z"/></svg>
+    </div>
+    <div class="theme-switch__stars-cluster"><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span></div>
+    <div class="theme-switch__shooting-star"></div><div class="theme-switch__shooting-star-2"></div><div class="theme-switch__meteor"></div>
+    <div class="theme-switch__aurora"></div>
+    <div class="theme-switch__comets"><span class="comet"></span><span class="comet"></span></div>
+    <div class="theme-switch__circle-container">
+      <div class="theme-switch__sun-moon-container">
+        <div class="theme-switch__moon"><div class="theme-switch__spot"></div><div class="theme-switch__spot"></div><div class="theme-switch__spot"></div></div>
+      </div>
+    </div>
+  </div>
+</label>
+
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <filter id="cb-prot" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="1 0 0 0 0  0.479 0.477 0.044 0 0  0.597 -0.689 1.091 0 0  0 0 0 1 0"/></filter>
+  <filter id="cb-deut" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="1.437 -0.631 0.195 0 0  0 1 0 0 0  -0.184 0.186 0.998 0 0  0 0 0 1 0"/></filter>
+  <filter id="cb-trit" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="0.741 -0.407 0.666 0 0  0.075 0.585 0.340 0 0  0 0 1 0 0  0 0 0 1 0"/></filter>
+</svg>
+
+<p id="anuncio" class="sr" aria-live="polite"></p>
+
+<div class="topbar">
+    <div class="a11y-nav">
+      <button id="a11yToggle" class="a11y-open" aria-expanded="false" aria-controls="a11yPanel" title="Opciones de accesibilidad">
+        <svg aria-hidden="true" width="34" height="34" viewBox="0 0 32 32"><circle cx="16" cy="16" r="15" fill="#2E5677"/><circle cx="16" cy="16" r="12.5" fill="none" stroke="#fff" stroke-width="1.5"/><circle cx="16" cy="8.6" r="2.4" fill="#fff"/><path d="M9 12.6c2.4.7 4.7 1 7 1s4.6-.3 7-1" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/><path d="M16 13.6v6M16 19.6l-2.6 5.4M16 19.6l2.6 5.4" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="sr">Opciones de accesibilidad</span>
+        <svg class="chev" aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M6 9l6 7 6-7z"/></svg>
+      </button>
+      <div id="a11yPanel" class="mega-panel" inert>
+        <div class="mm">
+          <div class="mm-col" role="group" aria-labelledby="g-audio">
+            <h3 id="g-audio"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5L6 9H3v6h3l5 4V5zM15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg>Audio</h3>
+            <p>Lee la presentación y después lo que señales con el mouse.</p>
+            <div class="mm-row">
+              <button id="readAll" aria-pressed="false">Activar lectura por voz</button>
+              <label class="voice-pick" hidden>Voz <select id="voiceSel"></select></label>
+              <button id="a11yClose">Cerrar menú</button>
+            </div>
+          </div>
+          <div class="mm-col mm-feature">
+            <svg aria-hidden="true" width="48" height="48" viewBox="0 0 32 32"><circle cx="16" cy="16" r="15" fill="#fff"/><circle cx="16" cy="16" r="12.5" fill="none" stroke="#2E5677" stroke-width="1.5"/><circle cx="16" cy="8.6" r="2.4" fill="#2E5677"/><path d="M9 12.6c2.4.7 4.7 1 7 1s4.6-.3 7-1" fill="none" stroke="#2E5677" stroke-width="2.4" stroke-linecap="round"/><path d="M16 13.6v6M16 19.6l-2.6 5.4M16 19.6l2.6 5.4" fill="none" stroke="#2E5677" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h3>Navegá a tu manera</h3>
+            <p>Ajustá la letra, los colores y el audio. Tus elecciones quedan guardadas para la próxima visita.</p>
+            <button id="a11yReset">Restablecer todo</button>
+          </div>
+          <div class="mm-col" role="group" aria-labelledby="g-letra">
+            <h3 id="g-letra"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l5-14 5 14M6 15h6M15 20l3-8 3 8M16 18h4"/></svg>Tamaño de letra</h3>
+            <p>Agrandá o achicá todo el texto.</p>
+            <div class="mm-row">
+              <button data-fs="-2" aria-label="Achicar letra">A−</button>
+              <button data-fs="0" aria-label="Letra normal">A</button>
+              <button data-fs="2" aria-label="Agrandar letra">A+</button>
+            </div>
+          </div>
+          <div class="mm-col" role="group" aria-labelledby="g-ver">
+            <h3 id="g-ver"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>Lectura</h3>
+            <p>Más contraste y espacio para leer cómodo.</p>
+            <div class="mm-row">
+              <button data-toggle="hc" aria-pressed="false">Alto contraste</button>
+              <button data-toggle="ul" aria-pressed="false">Subrayar enlaces</button>
+              <button data-toggle="sp" aria-pressed="false">Más espacio</button>
+            </div>
+          </div>
+          <div class="mm-col" role="group" aria-labelledby="g-color">
+            <h3 id="g-color"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M12 3a9 9 0 0 1 0 18"/></svg>Daltonismo</h3>
+            <p>Corrige los colores según cada tipo.</p>
+            <div class="mm-row" id="colorModes">
+              <button data-color="" aria-pressed="true">Normal</button>
+              <button data-color="prot" aria-pressed="false">Protanopia <small>(rojo)</small></button>
+              <button data-color="deut" aria-pressed="false">Deuteranopia <small>(verde)</small></button>
+              <button data-color="trit" aria-pressed="false">Tritanopia <small>(azul)</small></button>
+              <button data-color="gray" aria-pressed="false">Grises</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header><div class="wrap">
+  <a class="brand" href="index.html" style="color:inherit;text-decoration:none"><img class="logo-img" src="img/logo-mark.png" alt="" width="118" height="44"><span class="brand-name">Fundación 25 de Mayo<span class="sr"> A.FA.DI.MA.</span></span></a>
+  <button class="burger" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+  <nav aria-label="Principal" id="mainNav">
+    <a class="nl" href="index.html#nosotros">Quiénes somos</a><a class="nl" href="index.html#programas">Programas</a><a class="nl" href="index.html#transparencia">Transparencia</a><div class="mega-item">
+      <a class="nl" id="ayudarToggle" href="sumate.html" aria-current="page" aria-expanded="false" aria-controls="ayudarPanel">¿Cómo ayudar?<svg class="chev" aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M6 9l6 7 6-7z"/></svg></a>
+      <div id="ayudarPanel" class="mega-panel" inert>
+        <div class="mm">
+          <div class="mm-col mm-feature warm">
+            <div class="mm-heart"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></div>
+            <h3>Somos una ONG sin fines de lucro</h3>
+            <p>Tu aporte es esperanza. Cualquier ayuda es bienvenida: dinero, alimentos, tus horas, tus ideas o tu trabajo.</p>
+            <a class="mm-link" href="#donar">Donar ahora</a>
+          </div>
+          <div class="mm-col">
+            <h3><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="13" rx="2"/><path d="M2 10h20M6 15h4"/></svg>Doná una vez</h3>
+            <p>Un aporte puntual por Mercado Pago o transferencia.</p>
+            <div class="mm-row"><a class="mm-link" href="#donar">Quiero donar</a></div>
+          </div>
+          <div class="mm-col">
+            <h3><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg>Doná todos los meses</h3>
+            <p>Con un aporte mensual sostenés los talleres todo el año.</p>
+            <div class="mm-row"><a class="mm-link" href="#donar">Ser socio</a></div>
+          </div>
+          <div class="mm-col">
+            <h3><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M17 11l2 2 3.5-4"/></svg>Voluntariado</h3>
+            <p>Sumá tu tiempo en talleres, eventos o apoyo escolar.</p>
+            <div class="mm-row"><a class="mm-link" href="#voluntariado">Quiero ser voluntario</a></div>
+          </div>
+          <div class="mm-col">
+            <h3><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></svg>Padrinos y empresas</h3>
+            <p>Apadriná un programa o sumá a tu empresa como aliada.</p>
+            <div class="mm-row"><a class="mm-link" href="#empresas">Hablemos</a></div>
+          </div>
+        </div>
+      </div>
+    </div><a class="nl" href="index.html#contacto">Contacto</a>
+  </nav>
+</div></header>
+<div class="scrim" id="scrim" aria-hidden="true"></div>
+
+<main id="contenido">
+<section class="page-hero" style="padding:0"><div class="wrap"><div class="hero-text">
+  <h1>¿Cómo ayudar?</h1>
+  <p class="lead">Somos una ONG sin fines de lucro. Tu aporte es esperanza para cada joven que acompañamos.</p>
+  <div class="jump">
+    <a class="btn btn-o donar-cta" href="#donar">Donar ahora</a>
+    <a class="btn btn-b" href="#voluntariado">Quiero ser voluntario</a>
+    <a class="btn btn-b" href="#empresas">Soy una empresa</a>
+  </div>
+  </div>
+  <img class="hero-img" src="img/sumate.jpg" alt="Dibujo de una ronda de chicos y chicas de la mano junto a una flor amarilla." width="1375" height="768">
+</div></section>
+
+<section id="toda-ayuda" class="welcome"><div class="wrap">
+  <h2>Cualquier ayuda es bienvenida</h2>
+  <p class="lead">Tu ayuda no tiene que ser solo dinero. Todo lo que puedas dar nos ayuda a seguir adelante.</p>
+  <ul class="help-list">
+    <li><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="13" rx="2"/><path d="M2 10h20M6 15h4"/></svg><b>Dinero</b><span>Una donación única o todos los meses.</span></li>
+    <li><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11h14l-1.5 9h-11z"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><b>Alimentos</b><span>No perecederos y también perecederos.</span></li>
+    <li><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><b>Tus horas</b><span>Tu tiempo, aunque sea un rato por semana.</span></li>
+    <li><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/></svg><b>Tus ideas</b><span>Propuestas para talleres, eventos o difusión.</span></li>
+    <li><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg><b>Tu trabajo</b><span>Tu oficio o profesión al servicio de la fundación.</span></li>
+  </ul>
+  <p class="thanks">¡Muchas gracias!</p>
+  <div class="jump"><a class="btn btn-o donar-cta" href="#donar">Donar ahora</a><a class="btn btn-b" href="index.html#contacto">Quiero ayudar de otra forma</a></div>
+</div></section>
+
+<section id="techo" class="wrap">
+  <h2>Hoy necesitamos arreglar el techo</h2>
+  <div class="row" style="gap:2.5em;align-items:center">
+  <div>
+    <p class="lead" style="margin-bottom:1em">El techo de chapa de la sede está muy deteriorado: tiene perforaciones y el desagüe falla. Cada vez que llueve se filtra el agua y daña el cielorraso y lo que está debajo.</p>
+    <p>Para repararlo necesitamos:</p>
+    <ul class="uses">
+      <li>Membrana líquida o recubrimiento de caucho para el techo</li>
+      <li>Mejorar el desagüe</li>
+      <li>Reparar el cielorraso</li>
+      <li>Mano de obra para hacer el trabajo</li>
+    </ul>
+    <div class="jump" style="margin-top:1.5em">
+      <a class="btn btn-o donar-cta" href="#donar">Donar para el techo</a>
+      <a class="btn btn-b" href="index.html#contacto">Puedo aportar materiales o mano de obra</a>
+    </div>
+  </div>
+  <figure style="margin:0;flex-basis:420px">
+    <img class="photo" src="img/sede.jpg" alt="Frente de la sede de la Fundación 25 de Mayo, con techo de chapa." loading="lazy" width="1162" height="647">
+  </figure>
+  </div>
+</section>
+
+<section id="donar" class="dark"><div class="wrap">
+  <h2>Doná ahora</h2>
+  <div class="row" style="gap:2.5em;align-items:flex-start">
+  <div style="flex:1 1 300px">
+    <p class="lead">Cada aporte se transforma en talleres, materiales, traslados y profesionales que acompañan a los jóvenes.</p>
+    <p style="color:#D5DCE6">¿Querés saber en qué se usa? <a href="index.html#transparencia" style="color:#fff;font-weight:700">Mirá nuestra rendición de cuentas</a>.</p>
+  </div>
+  <div class="donate">
+      <h3 style="margin:0 0 .3em;font-size:1.4rem">Doná ahora</h3>
+      <p style="margin:0 0 1.25em;color:var(--soft)">Pago seguro con Mercado Pago. Podés donar una vez o todos los meses.</p>
+      <div class="pills" role="group" aria-label="Frecuencia" id="freq">
+        <button class="pill" aria-pressed="true" data-v="">Una vez</button>
+        <button class="pill" aria-pressed="false" data-v=" por mes">Todos los meses</button>
+      </div>
+      <div class="pills" role="group" aria-label="Monto" id="amt">
+        <button class="pill" aria-pressed="false" data-v="$5.000">$5.000</button>
+        <button class="pill" aria-pressed="true" data-v="$10.000">$10.000</button>
+        <button class="pill" aria-pressed="false" data-v="$20.000">$20.000</button>
+        <button class="pill" aria-pressed="false" data-v="">Otro monto</button>
+      </div>
+      <a class="btn btn-o" id="donar-btn" href="#" aria-live="polite" style="display:flex;min-height:56px;font-size:1.1rem">Donar $10.000</a>
+      <p style="margin:1em 0 0;font-size:.85rem;color:var(--mute)">También por transferencia: alias [alias.fundacion] · CBU [0000000000000000000000]</p>
+    </div>
+  </div>
+</div></section>
+
+<section id="voluntariado" class="wrap">
+  <h2>Voluntariado</h2>
+  <div class="row" style="gap:3em">
+  <div>
+    <p class="lead">Sumá tu tiempo y tus ganas. No hace falta experiencia: te acompañamos desde el primer día.</p>
+    <ul style="margin:0;padding-left:1.2em;display:grid;gap:.4em">
+      <li>Talleres de arte, oficios y deporte</li>
+      <li>Apoyo escolar</li>
+      <li>Eventos y campañas de la fundación</li>
+      <li>[Otras áreas donde necesiten ayuda]</li>
+    </ul>
+  </div>
+  <div class="form-card box">
+    <form class="send-form" action="https://formsubmit.co/a.fa.di.ma@hotmail.com" method="POST" data-kind="voluntario"><input type="hidden" name="_subject" value="Nuevo voluntario desde la web"><input type="hidden" name="_template" value="table"><input type="hidden" name="_captcha" value="false"><input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div><label for="v-nombre">Nombre y apellido</label><input id="v-nombre" name="Nombre" type="text" autocomplete="name" required></div>
+      <div><label for="v-tel">Teléfono o WhatsApp</label><input id="v-tel" name="Telefono" type="tel" autocomplete="tel" required></div>
+      <div><label for="v-area">¿En qué te gustaría ayudar?</label><select id="v-area" name="Quiere ayudar en"><option>Talleres</option><option>Apoyo escolar</option><option>Eventos y campañas</option><option>Donde haga falta</option></select></div>
+      <div><label for="v-disp">Disponibilidad</label><input id="v-disp" name="Disponibilidad" type="text" placeholder="Ej.: martes y jueves por la tarde"></div>
+      <p class="send-how">¿Cómo querés enviarlo?</p>
+      <div class="send-btns">
+        <button class="send-btn send-email" type="submit" data-via="email"><span class="send-ico"><img src="img/icon-email.png" alt="" width="26" height="26"></span><span class="send-lbl">Enviar por email</span></button>
+        <button class="send-btn send-wa" type="submit" data-via="whatsapp"><span class="send-ico"><i class="fi fi-brands-whatsapp" aria-hidden="true"></i></span><span class="send-lbl">Enviar por WhatsApp</span></button>
+      </div>
+      <p class="form-status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+  </div>
+</section>
+
+<section id="empresas" style="background:var(--sand)"><div class="wrap">
+  <h2>Padrinos y empresas</h2>
+  <p class="lead">Apadriná un taller, doná materiales o servicios, o sumá a tu equipo en una jornada solidaria. Agradecemos públicamente a cada empresa en nuestras redes. [Si la fundación tiene exención de Ganancias, las donaciones de empresas son deducibles.]</p>
+  <div class="jump" style="margin-bottom:2.5em">
+    <a class="btn btn-blue" href="index.html#contacto">Hablemos</a>
+    <a class="btn btn-b" href="#">Descargar propuesta para empresas (PDF)</a>
+  </div>
+  <p style="font-weight:700;margin:0 0 .75em">Empresas que nos acompañan</p>
+  <div class="allies allies-light"><div>[Logo aliado]</div><div>[Logo aliado]</div><div>[Logo aliado]</div><div>[Logo aliado]</div></div>
+</div></section>
+
+<section id="otras" class="wrap">
+  <h2>Otras formas de ayudar</h2>
+  <p class="lead">La fundación se sostiene con el esfuerzo de las familias. Sumarte a estas acciones también ayuda:</p>
+  <div class="grid">
+    <div class="box"><h3>Bono contribución anual</h3><p>Comprá tu bono y participá. [Precio y fecha del sorteo]</p></div>
+    <div class="box"><h3>Feria americana</h3><p>Doná ropa en buen estado o vení a comprar a nuestras ferias de ropa usada.</p></div>
+    <div class="box"><h3>Venta de pollos</h3><p>Encargá tu pollo en las próximas ventas. [Fecha y cómo encargar]</p></div>
+    <div class="box"><h3>Visitanos y compartí</h3><p>Conocé nuestro espacio y seguinos en Facebook e Instagram como Fundación Afadima.</p></div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><img class="foot-logo" src="img/logo.png" alt="Logo de la Fundación 25 de Mayo, A.FA.DI.MA." width="200" height="109"><span>© 2026 Fundación 25 de Mayo · A.FA.DI.MA. · CUIT 30-70875015-4</span><span><a href="https://maps.app.goo.gl/e1VHPkn7VmK34Kgk8" target="_blank" rel="noopener">M.N. de Ferreyra 239, Malagueño</a> · <a href="tel:+543514983479">(0351) 498-3479</a> · Facebook e Instagram: Fundación Afadima · Iconos: <a href="https://www.flaticon.com/uicons" target="_blank" rel="noopener">Uicons de Flaticon</a></span></div><p class="credit">Sitio desarrollado por <b>KFA Lab</b></p></footer>
+
+<a class="float" href="https://wa.me/5493515901524?text=%C2%A1Hola%21%20Les%20escribo%20desde%20la%20p%C3%A1gina%20web%20de%20la%20Fundaci%C3%B3n%2025%20de%20Mayo." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><i class="fi fi-brands-whatsapp" aria-hidden="true"></i></a>
+
+<script src="app.js"></script>
+</body>
+</html>
