@@ -724,3 +724,11 @@ html.noche .loader{background:#121822}
 }
 @media (prefers-reduced-motion:reduce){header.nav-open nav{animation:none}}
 @media (max-width:700px){header.nav-open nav{gap:25px!important;padding-top:14px!important}}
+
+/* Firma con enlace al Instagram de KFA Lab */
+.fi-brands-instagram:before{content:"\f16e";font-family:uicons-brands!important;font-style:normal;font-weight:400!important;line-height:1;display:block}
+.credit-link{display:inline-flex;align-items:center;gap:.35em;color:inherit;text-decoration:none;padding:.2em .1em;border-radius:6px}
+.credit-link .fi{font-size:1.05em;color:#C13584}
+.credit-link b{text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+.credit-link:hover b{color:#C13584}
+html.noche .credit-link .fi,html.noche .credit-link:hover b{color:#F07AB8}
