@@ -732,3 +732,20 @@ html.noche .loader{background:#121822}
 .credit-link b{text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
 .credit-link:hover b{color:#C13584}
 html.noche .credit-link .fi,html.noche .credit-link:hover b{color:#F07AB8}
+
+/* Transferencia bancaria */
+.transfer{margin-top:1.5em;padding:1.25em 1.25em 1em;border:2px dashed var(--yellow);border-radius:16px;background:var(--card)}
+.transfer h4{margin:0 0 .6em;font-family:'Lexend',sans-serif;font-size:1.15rem}
+.transfer dl{display:grid;grid-template-columns:auto 1fr;gap:.45em 1em;margin:0;align-items:center}
+.transfer dt{font-weight:700;color:var(--soft);font-size:.9rem}
+.transfer dd{margin:0;display:flex;flex-wrap:wrap;gap:.5em;align-items:center}
+.tr-val{font-size:1rem;font-weight:700;letter-spacing:.01em}
+.tr-num{font-family:ui-monospace,Menlo,Consolas,monospace;font-variant-numeric:tabular-nums;white-space:nowrap}
+.tr-copy{border:2px solid var(--blue);background:#fff;color:var(--blue);border-radius:999px;padding:.2em .9em;font:inherit;font-size:.85rem;font-weight:700;cursor:pointer;min-height:36px}
+.tr-copy:hover{background:var(--blue);color:#fff}
+.tr-note{margin:.6em 0 0;font-size:.85rem;color:var(--green);min-height:1.2em}
+html.noche .transfer{background:transparent}
+html.noche .tr-copy{background:transparent;color:inherit;border-color:currentColor}
+body.hc .transfer{background:#000!important;color:#fff!important;border-color:#fff!important}
+@media (max-width:480px){.transfer{padding:1em .9em .8em}.transfer dl{grid-template-columns:1fr;gap:.15em}.transfer dt{margin-top:.6em}.tr-num{font-size:clamp(.74rem,3.7vw,.95rem);letter-spacing:-.02em}}
+@media (max-width:340px){.tr-num{white-space:normal;word-break:break-all}}

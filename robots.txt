@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fundacion-25-de-mayo.vercel.app/sitemap.xml

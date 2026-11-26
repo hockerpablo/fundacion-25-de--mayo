@@ -3,8 +3,22 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>¿Cómo ayudar? — Fundación 25 de Mayo</title>
-<meta name="description" content="Fundación sin fines de lucro que acompaña a jóvenes con discapacidad. Doná, sumate como voluntario o inscribite.">
+<title>¿Cómo ayudar? — A.FA.DI.MA. Fundación 25 de Mayo, Malagueño</title>
+<meta name="description" content="Sumate a la Fundación 25 de Mayo (A.FA.DI.MA.) de Malagueño: doná, colaborá como voluntario o inscribite a los talleres para jóvenes y adultos con discapacidad.">
+<link rel="canonical" href="https://fundacion-25-de-mayo.vercel.app/sumate.html">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#FBD519">
+<link rel="icon" type="image/png" href="img/logo-mark.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_AR">
+<meta property="og:site_name" content="Fundación 25 de Mayo — A.FA.DI.MA.">
+<meta property="og:title" content="¿Cómo ayudar? — A.FA.DI.MA. Fundación 25 de Mayo, Malagueño">
+<meta property="og:description" content="Sumate a la Fundación 25 de Mayo (A.FA.DI.MA.) de Malagueño: doná, colaborá como voluntario o inscribite a los talleres para jóvenes y adultos con discapacidad.">
+<meta property="og:url" content="https://fundacion-25-de-mayo.vercel.app/sumate.html">
+<meta property="og:image" content="https://fundacion-25-de-mayo.vercel.app/img/sumate.jpg">
+<meta property="og:image:width" content="1375">
+<meta property="og:image:height" content="768">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Lexend:wght@500;700&family=Rubik+Spray+Paint&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
@@ -124,7 +138,7 @@
           </div>
           <div class="mm-col">
             <h3><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="13" rx="2"/><path d="M2 10h20M6 15h4"/></svg>Doná una vez</h3>
-            <p>Un aporte puntual por Mercado Pago o transferencia.</p>
+            <p>Un aporte puntual por transferencia bancaria.</p>
             <div class="mm-row"><a class="mm-link" href="#donar">Quiero donar</a></div>
           </div>
           <div class="mm-col">
@@ -207,20 +221,19 @@
     <p style="color:#D5DCE6">¿Querés saber en qué se usa? <a href="index.html#transparencia" style="color:#fff;font-weight:700">Mirá nuestra rendición de cuentas</a>.</p>
   </div>
   <div class="donate">
-      <h3 style="margin:0 0 .3em;font-size:1.4rem">Doná ahora</h3>
-      <p style="margin:0 0 1.25em;color:var(--soft)">Pago seguro con Mercado Pago. Podés donar una vez o todos los meses.</p>
-      <div class="pills" role="group" aria-label="Frecuencia" id="freq">
-        <button class="pill" aria-pressed="true" data-v="">Una vez</button>
-        <button class="pill" aria-pressed="false" data-v=" por mes">Todos los meses</button>
+      <h3 style="margin:0 0 .3em;font-size:1.4rem">Doná por transferencia</h3>
+      <p style="margin:0 0 .5em;color:var(--soft)">Podés hacer un aporte único o programar una transferencia todos los meses desde la app de tu banco. Cualquier monto ayuda.</p>
+      <div class="transfer" id="transferencia" aria-labelledby="tr-h" style="margin-top:1em">
+        <h4 id="tr-h">Datos de la cuenta</h4>
+        <dl>
+          <dt>Alias</dt><dd><span class="tr-val">Fundacion25deMayo</span><button type="button" class="tr-copy" data-copy="Fundacion25deMayo" aria-label="Copiar alias">Copiar</button></dd>
+          <dt>CBU</dt><dd><span class="tr-val tr-num">0200454301000001061801</span><button type="button" class="tr-copy" data-copy="0200454301000001061801" aria-label="Copiar CBU">Copiar</button></dd>
+          <dt>Cuenta corriente</dt><dd><span class="tr-val tr-num">$ 454 0001061800</span></dd>
+          <dt>Titular</dt><dd><span class="tr-val">Fundación 25 de Mayo</span></dd>
+          <dt>CUIT</dt><dd><span class="tr-val tr-num">30-70875015-4</span></dd>
+        </dl>
+        <p class="tr-note" role="status" aria-live="polite"></p>
       </div>
-      <div class="pills" role="group" aria-label="Monto" id="amt">
-        <button class="pill" aria-pressed="false" data-v="$5.000">$5.000</button>
-        <button class="pill" aria-pressed="true" data-v="$10.000">$10.000</button>
-        <button class="pill" aria-pressed="false" data-v="$20.000">$20.000</button>
-        <button class="pill" aria-pressed="false" data-v="">Otro monto</button>
-      </div>
-      <a class="btn btn-o" id="donar-btn" href="#" aria-live="polite" style="display:flex;min-height:56px;font-size:1.1rem">Donar $10.000</a>
-      <p style="margin:1em 0 0;font-size:.85rem;color:var(--mute)">También por transferencia: alias [alias.fundacion] · CBU [0000000000000000000000]</p>
     </div>
   </div>
 </div></section>
@@ -282,5 +295,6 @@
 <a class="float" href="https://wa.me/5493515901524?text=%C2%A1Hola%21%20Les%20escribo%20desde%20la%20p%C3%A1gina%20web%20de%20la%20Fundaci%C3%B3n%2025%20de%20Mayo." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><i class="fi fi-brands-whatsapp" aria-hidden="true"></i></a>
 
 <script src="app.js"></script>
+<script>document.querySelectorAll('.tr-copy').forEach(function(b){b.addEventListener('click',function(){var v=b.dataset.copy,n=document.querySelector('.tr-note');function ok(){b.textContent='¡Copiado!';if(n)n.textContent=b.getAttribute('aria-label').replace('Copiar','Copiaste el')+': '+v;setTimeout(function(){b.textContent='Copiar'},2000)}if(navigator.clipboard){navigator.clipboard.writeText(v).then(ok,function(){})}else{var t=document.createElement('textarea');t.value=v;document.body.appendChild(t);t.select();try{document.execCommand('copy');ok()}catch(e){}t.remove()}})})</script>
 </body>
 </html>
